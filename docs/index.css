@@ -1,0 +1,556 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img
+{
+    width: 200px;
+}
+.les_images_reseaux
+{
+    width: 30px;
+}
+
+/*grand ecran*/
+@media screen and (min-width:1024px)
+{
+    footer
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    #menu
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    li
+    {
+        list-style: none;
+    }
+    a
+    {
+        text-decoration: none;
+        color: black;
+    }
+    #myHeader
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #2596BE;
+    }
+    #myHeader h1
+    {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #partie1 h2
+    {
+        text-align: center;
+    }
+    #partie1
+    {
+        background-color: #E28743;
+        padding: 20px 0;
+    }
+    #Presentation
+    {
+        display: flex;
+        justify-content: space-around;
+        gap: 400px;
+    }
+    #text_me_decrivant
+    {
+        width: 500px;
+        text-align: justify;
+    }
+    #partie2
+    {
+        padding: 20px 0;
+        background-color: #2596BE;
+    }
+    #partie2 h2
+    {
+        text-align: center;
+    }
+    #les_langages_appris
+    {
+        line-height: 30px;
+        text-align: center;
+    }
+    #partie3 h2
+    {
+        text-align: center;
+    }
+    #partie3
+    {
+        padding-top: 20px;
+        background-color: #E28743;
+    }
+    .card
+    {
+        width: 300px;
+        height: 300px;
+        margin: 10px 0;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #Projets
+    {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .diplomes
+    {
+        margin: 30px 0;
+        width: 600px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .les_infos_diplomes
+    {
+        line-height: 35px;
+    }
+    #partie4 h2
+    {
+        text-align: center;
+    }
+    #partie4
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #2596BE;
+        padding: 20px 0;
+    }
+    #le_bouton_menu
+    {
+        display: none;
+    }
+    #partie5
+    {
+        background-color: #E28743;
+        padding: 20px 0;
+    }
+    #partie5 h2
+    {
+        text-align: center;
+        margin: 20px 0;
+    }
+    #le_formulaire
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #name
+    {
+        margin-bottom: 20px;
+    }
+    #mail
+    {
+        margin-bottom: 20px;
+    }
+    #message_a_envoyer
+    {
+        margin-bottom: 20px;
+    }
+    input
+    {
+        width: 150px;
+        height: 30px;
+        border: none;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    textarea
+    {
+        width: 300px;
+        height: 100px;
+        border: none;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    #bouton_envoyer
+    {
+        width: 100px;
+        height: 30px;
+        border: none;
+        background-color: #2596BE;
+        color: white;
+    }
+    footer
+    {
+        background-color: #2596BE;
+    }
+}
+/*ecran tablette*/
+@media screen and (min-width: 768px) AND (max-width:1023px)
+{
+    #menu
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    li
+    {
+        list-style: none;
+    }
+    a
+    {
+        text-decoration: none;
+        color: black;
+    }
+    #myHeader
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #2596BE;
+    }
+    #myHeader h1
+    {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #partie1 h2
+    {
+        text-align: center;
+    }
+    #partie1
+    {
+        background-color: #E28743;
+        padding: 20px 0;
+    }
+    #Presentation
+    {
+        display: flex;
+        justify-content: space-around;
+        gap: 150px;
+    }
+    #text_me_decrivant
+    {
+        width: 400px;
+        text-align: justify;
+    }
+    #partie2
+    {
+        padding: 20px 0;
+        background-color: #2596BE;
+    }
+    #partie2 h2
+    {
+        text-align: center;
+    }
+    #les_langages_appris
+    {
+        line-height: 30px;
+        text-align: center;
+    }
+    #partie3
+    {
+        padding-top: 20px;
+        background-color: #E28743;
+    }
+    #partie3 h2
+    {
+        text-align: center;
+    }
+    .card
+    {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #Projets
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+        /* align-items: center; */
+    }
+    .diplomes
+    {
+        margin: 30px 0;
+        width: 600px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .les_infos_diplomes
+    {
+        line-height: 35px;
+    }
+    #partie4 h2
+    {
+        text-align: center;
+    }
+    #partie4
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #2596BE;
+    }
+    #le_bouton_menu
+    {
+        display: none;
+    }
+    #partie5
+    {
+        background-color: #E28743;
+        padding: 20px 0;
+    }
+    #partie5 h2
+    {
+        text-align: center;
+        margin: 20px 0;
+    }
+    footer
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #2596BE;
+    }
+    #le_formulaire
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #name
+    {
+        margin-bottom: 20px;
+    }
+    #mail
+    {
+        margin-bottom: 20px;
+    }
+    #message_a_envoyer
+    {
+        margin-bottom: 20px;
+    }
+    input
+    {
+        width: 150px;
+        height: 30px;
+        border: none;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    textarea
+    {
+        width: 300px;
+        height: 100px;
+        border: none;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    #bouton_envoyer
+    {
+        width: 100px;
+        height: 30px;
+        border: none;
+        background-color: #2596BE;
+        color: white;
+    }
+    footer
+    {
+        background-color: #2596BE;
+    }
+
+}
+/*ecran telephone*/
+@media screen and (max-width:767px)
+{
+    #menu{
+        display: none;
+    }
+    #menu li a
+    {
+        color: black;
+        text-decoration: none;
+    }
+    #myHeader
+    {
+        padding: 20px 0;
+        background-color: #2596BE;
+    }
+    #myHeader h1
+    {
+        text-align: center;
+    }
+    nav
+    {
+        margin-top: 20px;
+    }
+    #partie1
+    {
+        background-color: #E28743;
+        padding: 20px 0;
+    }
+    #partie1 h2
+    {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #les_images
+    {
+        display: flex;
+        justify-content: center;
+    }
+    #les_infos
+    {
+        margin: 30px 10px;
+    }
+    #text_me_decrivant
+    {
+        text-align: justify;
+    }
+    #partie2 h2
+    {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #partie2
+    {
+        padding: 20px 0;
+        background-color: #2596BE;
+    }
+    #partie2 p
+    {
+        text-align: center;
+    }
+    .card
+    {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #les_langages_appris
+    {
+        line-height: 30px;
+        
+    }
+    #partie3 h2
+    {
+        text-align: center;
+    }
+    #partie3
+    {
+        padding-top: 20px;
+        background-color: #E28743;
+    }
+    #Projets
+    {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #partie4 h2
+    {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #partie4
+    {
+        padding: 20px 0;
+        background-color: #2596BE;
+    }
+    .diplomes
+    {
+        
+        margin: 20px 20px;
+        border: 1px solid black;
+    }
+    footer
+    {
+        
+        padding: 20px;
+        background-color: #2596BE;
+    }
+    ul li
+    {
+        list-style: none;
+    }
+    #partie5
+    {
+        background-color: #E28743;
+        padding: 20px 0;
+    }
+    #partie5 h2
+    {
+        text-align: center;
+        margin: 20px 0;
+    }
+    footer
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #2596BE;
+    }
+    #le_formulaire
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #name
+    {
+        margin-bottom: 20px;
+    }
+    #mail
+    {
+        margin-bottom: 20px;
+    }
+    #message_a_envoyer
+    {
+        margin-bottom: 20px;
+    }
+    input
+    {
+        width: 150px;
+        height: 30px;
+        border: none;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    textarea
+    {
+        width: 300px;
+        height: 100px;
+        border: none;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    #bouton_envoyer
+    {
+        width: 100px;
+        height: 30px;
+        border: none;
+        background-color: #2596BE;
+        color: white;
+    }
+}
