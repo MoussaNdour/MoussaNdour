@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <header id="myHeader">
+        <h2>Moussa Ndour</h2>
+        <nav id="le_menu">
+            <button id="le_bouton_menu" onClick='gestion_menu()'><i id="icone_menu" class="material-icons">menu</i></button>
+            <ul id="menu">
+                <li><a href="#partie1">Presentation</a></li>
+                <li><a href="#partie2" id="competences">Competences</a></li>
+                <li><a href="#partie3" id="projets">Projets</a></li>
+                <li><a href="#partie4">Etudes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <div id="partie1">
+            <h2>About Me</h2>
+            <div id="Presentation">
+                <div id="les_images">
+                    <img src="Images/1.jpg" alt="homme_en_costume" id="images">
+                </div>
+                <div id="les_infos">
+                    <div id="text_me_decrivant">
+                        <p>Je suis un étudiant en licence informatique passionné par le développement et les mathématiques. 
+                            Toujours curieux et avide d’apprendre, je me consacre à maîtriser des domaines variés tels que le développement web, 
+                            mobile et logiciel, avec une ambition claire : devenir un développeur accompli.</p>
+                        
+                        <p>Mon parcours est guidé par une volonté de résoudre des problèmes complexes et de concevoir des solutions innovantes.</p> 
+                        <p>En parallèle, je cultive une passion pour la physique, que je considère comme un pont entre les mathématiques et 
+                            l’exploration de notre univers. Mon objectif à long terme est de me spécialiser en informatique quantique, un domaine 
+                            où se croisent mes intérêts pour la science et la technologie.</p>
+                        <p>À travers ce portfolio, je partage mes projets, mon évolution et ma vision, tout en me préparant à relever les défis 
+                            du monde technologique.</p>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="partie2">
+            <h2>Langages Appris</h2>
+            <div id="les_langages_appris">
+                <p>HTML et CSS<button id="bouton_infos_html_css" style="margin-left: 10px;">infos</button></p>
+                <div id="infos_par_rapport_a_mon_niveau_en_html_css" class="modal-container">
+                    <div class="modal" id="le_modal_html_css">
+                        <h3>Mon experience avec HTML et CSS</h3>
+                        <p>
+                            Je possède une bonne maîtrise de HTML et CSS, ce qui me permet de structurer et de styliser des interfaces web de manière efficace. 
+                            Je suis à l’aise avec les balises HTML sémantiques, la gestion des formulaires, les tableaux, et les éléments multimédias. 
+                            Côté CSS, je sais utiliser les propriétés de mise en page (Flexbox, Grid), gérer les animations, et créer des designs responsives adaptés aux différents écrans. 
+                            Mon objectif est de produire des interfaces claires, modernes et accessibles.
+                        </p>
+                        <button id="bouton_fermer_html">fermer</button>
+                    </div>
+
+                </div>
+                <p>Javascript<button id="bouton_infos_js" style="margin-left: 10px;">infos</button></p>
+                <div id="infos_niveau_javascript" class="modal-container">
+                    <div class="modal" id="le_modal_js">
+                        <h3>Mon experience avec Javascript</h3>
+                        <p>
+                            En JavaScript, je suis capable de concevoir des fonctionnalités dynamiques pour enrichir l’expérience utilisateur. 
+                            Je maîtrise les bases du langage, telles que la manipulation du DOM, la gestion des événements, et l’utilisation des API natives. 
+                            Je suis également familier avec des concepts plus avancés, comme les promesses, la programmation asynchrone, et les modules ES6. 
+                            Mon approche consiste à écrire un code lisible, optimisé, et facile à maintenir pour répondre aux besoins des projets.
+                        </p>
+                        <button id="bouton_fermer_js">fermer</button>
+                    </div>
+                </div>
+                <p>Bootstrap<button id="bouton_bootstrap" style="margin-left: 10px;">infos</button></p>
+                <div id="infos_niveau_bootstrap" class="modal-container">
+                    <div class="modal" id="le_modal_bootstrap">
+                        <h3>Mon experience avec Bootstrap</h3>
+                        <p>
+                            Je maîtrise les bases de Bootstrap, l’un des frameworks CSS les plus populaires pour concevoir des interfaces web modernes et réactives. 
+                            Avec Bootstrap, je peux créer des sites qui s'adaptent parfaitement à toutes les tailles d’écran. 
+                            Ses composants prédéfinis et son système de grille facilitent le développement rapide de designs professionnels, sans avoir à écrire beaucoup de code CSS personnalisé.
+
+                        </p>
+                        <button id="bouton_fermer_bootstrap">fermer</button>
+                    </div>
+                </div>
+                <p>PHP<button id="bouton_infos_php" style="margin-left: 10px;">infos</button></p>
+                <div id="infos_niveau_php" class="modal-container">
+                    <div class="modal" id="le_modal_php">
+                        <h3>Mon experience avec PHP</h3>
+                        <p>
+                            J’ai appris les bases de PHP, un langage côté serveur indispensable pour le développement web. 
+                            Grâce à PHP, je peux créer des applications dynamiques et interactives, gérer des bases de données et automatiser des tâches côté serveur. 
+                            Ce langage est puissant pour la création de systèmes comme les blogs, les plateformes e-commerce ou les outils de gestion. Maîtriser PHP est un atout essentiel pour tout développeur web.
+
+                        </p>
+                        <button id="bouton_fermer_php">fermer</button>
+                    </div>
+                </div>
+                <p>SQL<button id="le_bouton_infos_sql" style="margin-left: 10px;">infos</button></p>
+                <div id="infos_niveau_sql" class="modal-container">
+                    <div class="modal" id="le_modal_sql">
+                        <h3>Mon experience avec SQL</h3>
+                        <p>
+                            J’ai acquis les bases de SQL, le langage standard pour interagir avec les bases de données relationnelles. 
+                            Avec SQL, je peux créer, gérer et interroger des bases de données pour stocker et exploiter efficacement des informations. 
+                            Cela me permet de travailler avec des systèmes comme MySQL et d’intégrer des données dans des applications web ou logicielles.
+
+                        </p>
+                        <button id="bouton_fermer_sql">fermer</button>
+                    </div>
+                </div>
+                <p>C++<button id="le_bouton_infos_cpp" style="margin-left: 10px;">infos</button></p>
+                <div id="infos_niveau_cpp" class="modal-container">
+                    <div class="modal" id="le_modal_cpp">
+                        <h3>Mon experience avec C++</h3>
+                        <p>
+                            Je me suis initié aux bases de C++, un langage puissant et polyvalent utilisé pour le développement de logiciels performants. 
+                            C++ m’a permis de comprendre les concepts fondamentaux de la programmation comme la gestion de la mémoire, la programmation orientée objet et la manipulation de structures de données. 
+                            C’est une excellente base pour explorer des domaines comme le développement de jeux, les systèmes embarqués ou encore l’intelligence artificielle.
+
+
+                        </p>
+                        <button id="bouton_fermer_cpp">fermer</button>
+                    </div>
+                </div>
+                <p>React<button id="le_bouton_infos_react" style="margin-left: 10px;">infos</button></p>
+                <div id="infos_niveau_react" class="modal-container">
+                    <div class="modal" id="le_modal_react">
+                        <h3>Mon experience avec React</h3>
+                        <p>
+                            J’ai appris les bases de React, une bibliothèque JavaScript incontournable pour créer des interfaces utilisateur dynamiques et réactives. 
+                            Grâce à React, je peux développer des applications web modernes avec des composants réutilisables et une gestion efficace de l’état. 
+                            Cette compétence est essentielle pour répondre aux besoins des utilisateurs en matière de performance et d’interactivité.
+                        </p>
+                        <button id="bouton_fermer_react">fermer</button>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <div id="partie3">
+            <h2>Mes Projets</h2>
+            <div id="Projets">
+                <div id="galerie_d_images" class="card">
+                    
+                </div>
+                <div id="calcultrice" class="card">
+                    <p>Appli meteo</p>
+                </div>
+                <div id="commerce en ligne" class="card">
+                    <p>Galerie d'images</p>
+                </div>
+                <div id="" class="card">
+                    <p>Chronometre</p>
+                </div>
+                <div id="" class="card">
+                    <p>Site e-commerce</p>
+                </div>
+                <div id="" class="card">
+                    <p>Ce site n'a pas encore ete code</p>
+                </div>
+            </div>
+        </div>
+        <div id="partie4">
+            
+            <h2>Mes diplomes</h2>
+            <div class="diplomes">
+                <div id="image_ucad">
+                    <img src="Images/ucad.jpg" alt="ucad">
+                </div>
+                <div class="les_infos_diplomes">
+                    <p>Diplome de Licence Informatique</p>
+                    <hr>
+                    <p>2022-2025</p>
+                    <hr>
+                    <p>En Cours</p>
+                </div>
+            </div>
+            <div class="diplomes">
+                <div id="image_camp_marchand">
+                    <img src="Images/camp_marchand.jpg" alt="Camp Marchand">
+                </div>
+                <div class="les_infos_diplomes">
+                    <p>Diplome de Baccalaureat</p>
+                    <hr>
+                    <p>2020-2021</p>
+                    <hr>
+                    <p>Termine</p>
+                </div>
+            </div>
+            
+        </div>
+        <div id="partie5">
+            <h2>Me Contacter</h2>
+            <div id="formulaire">
+                <form id="le_formulaire" action="index.php" method="post">
+                    <div id="name">
+                        <label for="nom">Nom:</label>
+                        <input type="text" name="nom" id="nom" required>
+                    </div>
+                    <div id="mail">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div id="message_a_envoyer">
+                        <!-- <label for="message">Message</label> -->
+                        <textarea name="message" id="message" cols="50" rows="10" required></textarea>
+                    </div>
+                    
+                    <button id="bouton_envoyer" type="submit">Envoyer</button>
+                    
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- copyright -->
+        <p>&copy; 2021 Moussa Ndour</p>
+        <ul>
+            <!-- link to socials -->
+            <li class="mes_contacts"><a href="https://instagram.com/ndour5644" class="liens_contacts"><img class="les_images_reseaux" src="/Images/insta.png" alt=""></a></li>
+            <li class="mes_contacts"><a href="https://github.com/MoussaNdour" class="liens_contacts"><img class="les_images_reseaux" src="/Images/github.png" alt=""></a></li>
+            <li class="mes_contacts"><a href="https://facebook.com/MoussaNdour" class="liens_contacts"><img class="les_images_reseaux" src="/Images/facebook.png" alt=""></a></li>
+        </ul>
+    </footer>
+    <script type="text/javascript" src="src/index.js"></script>
+</body>
+</html>

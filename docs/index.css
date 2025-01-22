@@ -1,0 +1,844 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img
+{
+    width: 200px;
+}
+.les_images_reseaux
+{
+    width: 30px;
+}
+body
+{
+    font-family: 'Popins', sans-serif;
+}
+#galerie_d_images
+{
+    background-image: url('Images/Image_projet_to_do.png');
+    background-size: cover;
+    background-position: center;
+}
+/*grand ecran*/
+@media screen and (min-width:1024px)
+{
+
+    /*gestion du modal HTML et CSS*/
+    .modal-container
+    {
+        
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #infos_par_rapport_a_mon_niveau_en_html_css
+    {
+        display: none;
+    }
+    .modal
+    {
+        background-color: white;
+        width: 700px;
+        padding: 20px;
+    }
+    /*GESTION DU MODAL JAVASCRIPT*/
+    #infos_niveau_javascript
+    {
+        display: none;
+    }
+    #infos_niveau_bootstrap
+    {
+        display: none;
+    }
+    #infos_niveau_php
+    {
+        display: none;
+    }
+    #infos_niveau_sql
+    {
+        display: none;
+    }
+    #infos_niveau_cpp
+    {
+        display: none;
+    }
+    #infos_niveau_react
+    {
+        display: none;
+    }
+
+
+    /*  */
+    footer
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    #menu
+    {
+        display: flex;
+        justify-content: space-around;
+        width: 500px;
+    }
+    @keyframes animation_menu {
+        0%
+        {
+            transform: scale(1);
+        }
+        100%
+        {
+            transform: scale(1.3);
+        }
+    }
+    #menu li:hover{
+        animation: animation_menu 0.5s ease-in forwards;
+    }
+    header
+    {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        background-color: #edf2f4;
+    }
+    li
+    {
+        list-style: none;
+    }
+    a
+    {
+        text-decoration: none;
+        color: #8d99ae;
+    }
+    button
+    {
+        background-color: #8d99ae;
+        border: none;
+        padding: 5px;
+        color: #edf2f4;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    #myHeader
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+    }
+    #myHeader h1
+    {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #partie1 h2
+    {
+        text-align: center;
+        
+    }
+    #partie1
+    {
+        padding: 20px 0;
+       
+        
+    }
+    #Presentation
+    {
+        display: flex;
+        justify-content: space-around;
+        gap: 400px;
+    }
+    #text_me_decrivant
+    {
+        width: 500px;
+        text-align: justify;
+        font-size: 18px;
+    }
+    #text_me_decrivant p
+    {
+        margin: 10px 0;
+    }
+    #partie2
+    {
+        padding: 20px 0;
+        
+    }
+    #partie2 h2
+    {
+        text-align: center;
+    }
+    #les_langages_appris
+    {
+        line-height: 30px;
+        text-align: center;
+    }
+    #partie3 h2
+    {
+        text-align: center;
+    }
+    #partie3
+    {
+        padding-top: 20px;
+        
+    }
+    .card
+    {
+        width: 300px;
+        height: 300px;
+        margin: 10px 0;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #Projets
+    {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .diplomes
+    {
+        margin: 30px 0;
+        width: 600px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .les_infos_diplomes
+    {
+        line-height: 35px;
+    }
+    #partie4 h2
+    {
+        text-align: center;
+    }
+    #partie4
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        padding: 20px 0;
+    }
+    #le_bouton_menu
+    {
+        display: none;
+    }
+    #partie5
+    {
+        
+        padding: 20px 0;
+    }
+    #partie5 h2
+    {
+        text-align: center;
+        margin: 20px 0;
+    }
+    #le_formulaire
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #name
+    {
+        margin-bottom: 20px;
+    }
+    #mail
+    {
+        margin-bottom: 20px;
+    }
+    #message_a_envoyer
+    {
+        margin-bottom: 20px;
+    }
+    input
+    {
+        width: 150px;
+        height: 30px;
+        border: none;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    textarea
+    {
+        width: 300px;
+        height: 100px;
+        border: none;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    #bouton_envoyer
+    {
+        width: 100px;
+        height: 30px;
+        border: none;
+        color: white;
+    }
+    
+}
+/*ecran tablette*/
+@media screen and (min-width: 768px) AND (max-width:1023px)
+{
+    /*gestion du modal HTML et CSS*/
+    .modal-container
+    {
+        
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #infos_par_rapport_a_mon_niveau_en_html_css
+    {
+        display: none;
+    }
+    .modal
+    {
+        background-color: white;
+        width: 700px;
+        padding: 20px;
+    }
+
+    /*  */
+    button
+    {
+        background-color: #8d99ae;
+        border: none;
+        padding: 5px;
+        color: #edf2f4;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    input
+    {
+        width: 150px;
+        height: 30px;
+        border: none;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        background-color: #edf2f4;
+    }
+    /*gestion des modals*/
+    #infos_niveau_javascript
+    {
+        display: none;
+    }
+    #infos_niveau_bootstrap
+    {
+        display: none;
+    }
+    #infos_niveau_php
+    {
+        display: none;
+    }
+    #infos_niveau_sql
+    {
+        display: none;
+    }
+    #infos_niveau_cpp
+    {
+        display: none;
+    }
+    #infos_niveau_react
+    {
+        display: none;
+    }
+    #menu
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    li
+    {
+        list-style: none;
+    }
+    a
+    {
+        text-decoration: none;
+        color: #8d99ae;
+    }
+    #myHeader
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #edf2f4;
+    }
+    #myHeader h2
+    {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #partie1 h2
+    {
+        text-align: center;
+    }
+    #partie1
+    {
+        
+        padding: 20px 0;
+    }
+    #Presentation
+    {
+        display: flex;
+        justify-content: space-around;
+        gap: 150px;
+    }
+    #text_me_decrivant
+    {
+        width: 400px;
+        text-align: justify;
+    }
+    #partie2
+    {
+        padding: 20px 0;
+        
+    }
+    #partie2 h2
+    {
+        text-align: center;
+    }
+    #les_langages_appris
+    {
+        line-height: 30px;
+        text-align: center;
+    }
+    #partie3
+    {
+        padding-top: 20px;
+        
+    }
+    #partie3 h2
+    {
+        text-align: center;
+    }
+    .card
+    {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #Projets
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+        /* align-items: center; */
+    }
+    .diplomes
+    {
+        margin: 30px 0;
+        width: 600px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .les_infos_diplomes
+    {
+        line-height: 35px;
+    }
+    #partie4 h2
+    {
+        text-align: center;
+    }
+    #partie4
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #le_bouton_menu
+    {
+        display: none;
+    }
+    #partie5
+    {
+        
+        padding: 20px 0;
+    }
+    #partie5 h2
+    {
+        text-align: center;
+        margin: 20px 0;
+    }
+    footer
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        
+    }
+    #le_formulaire
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #name
+    {
+        margin-bottom: 20px;
+    }
+    #mail
+    {
+        margin-bottom: 20px;
+    }
+    #message_a_envoyer
+    {
+        margin-bottom: 20px;
+    }
+    input
+    {
+        width: 150px;
+        height: 30px;
+        border: none;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    textarea
+    {
+        width: 300px;
+        height: 100px;
+        border: none;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    #bouton_envoyer
+    {
+        width: 100px;
+        height: 30px;
+        border: none;
+        
+        color: white;
+    }
+    
+    
+
+}
+/*ecran telephone*/
+@media screen and (max-width:767px)
+{
+    .diplomes
+    {
+        padding: 20px;
+        border: 1px solid black;
+        line-height: 30px;
+    }
+    /*gestion du modal HTML et CSS*/
+    .modal-container
+    {
+        
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #infos_par_rapport_a_mon_niveau_en_html_css
+    {
+        display: none;
+    }
+    .modal
+    {
+        background-color: white;
+        width: 500px;
+        padding: 20px;
+    }
+
+    /*  */
+    button
+    {
+        background-color: #8d99ae;
+        border: none;
+        padding: 5px;
+        color: #edf2f4;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    input
+    {
+        width: 150px;
+        height: 30px;
+        border: none;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        background-color: #edf2f4;
+    }
+    /*gestion des modals*/
+    #infos_niveau_javascript
+    {
+        display: none;
+    }
+    #infos_niveau_bootstrap
+    {
+        display: none;
+    }
+    #infos_niveau_php
+    {
+        display: none;
+    }
+    #infos_niveau_sql
+    {
+        display: none;
+    }
+    #infos_niveau_cpp
+    {
+        display: none;
+    }
+    #infos_niveau_react
+    {
+        display: none;
+    }
+    #menu
+    {
+        display: flex;
+        justify-content: space-around;
+        line-height: 30px;
+    }
+    
+    li
+    {
+        list-style: none;
+    }
+    a
+    {
+        text-decoration: none;
+        color: #8d99ae;
+    }
+    #myHeader
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #edf2f4;
+    }
+    #myHeader h2
+    {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #partie1 h2
+    {
+        text-align: center;
+    }
+    #partie1
+    {
+        padding: 20px 0;
+    }
+    
+    #text_me_decrivant
+    {
+        
+        text-align: justify;
+        margin: 20px;
+    }
+    #partie2
+    {
+        padding: 20px 0;
+        
+    }
+    #partie2 h2
+    {
+        text-align: center;
+    }
+    #les_langages_appris
+    {
+        line-height: 30px;
+        text-align: center;
+    }
+    #menu{
+        display: none;
+    }
+    #menu li a
+    {
+        color: black;
+        text-decoration: none;
+    }
+    #myHeader
+    {
+        padding: 20px 0;
+        background-color: #edf2f4;
+    }
+    #myHeader h2
+    {
+        text-align: center;
+    }
+    nav
+    {
+        margin-top: 20px;
+    }
+    #partie1
+    {
+        
+        padding: 20px 0;
+    }
+    #partie1 h2
+    {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #les_images
+    {
+        display: flex;
+        justify-content: center;
+    }
+    #les_infos
+    {
+        margin: 30px 10px;
+    }
+    #text_me_decrivant
+    {
+        text-align: justify;
+    }
+    #partie2 h2
+    {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #partie2
+    {
+        padding: 20px 0;
+        
+    }
+    #partie2 p
+    {
+        text-align: center;
+    }
+    .card
+    {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #les_langages_appris
+    {
+        line-height: 30px;
+        
+    }
+    #partie3 h2
+    {
+        text-align: center;
+    }
+    #partie3
+    {
+        padding-top: 20px;
+        
+    }
+    #Projets
+    {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #partie4 h2
+    {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #partie4
+    {
+        padding: 20px 0;
+        
+    }
+    .diplomes
+    {
+        
+        margin: 20px 20px;
+        border: 1px solid black;
+    }
+    
+    ul li
+    {
+        list-style: none;
+    }
+    #partie5
+    {
+        
+        padding: 20px 0;
+    }
+    #partie5 h2
+    {
+        text-align: center;
+        margin: 20px 0;
+    }
+    footer
+    {
+        
+        padding: 20px;
+        line-height: 30px;
+    }
+    #le_formulaire
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #name
+    {
+        margin-bottom: 20px;
+    }
+    #mail
+    {
+        margin-bottom: 20px;
+    }
+    #message_a_envoyer
+    {
+        margin-bottom: 20px;
+    }
+    input
+    {
+        width: 150px;
+        height: 30px;
+        border: none;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    textarea
+    {
+        width: 300px;
+        height: 100px;
+        border: none;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    #bouton_envoyer
+    {
+        width: 100px;
+        height: 30px;
+        border: none;
+       
+        color: white;
+    }
+}
